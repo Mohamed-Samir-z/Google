@@ -71,16 +71,6 @@ input::before{
     display: block;
     margin: 0 auto;
     margin-top: 20px;
-    
-}
-input:focus::placeholder{
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    overflow: auto;
 }
 form {
     text-align: center;
@@ -136,3 +126,4 @@ button:focus {
     outline: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+

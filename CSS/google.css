@@ -19,7 +19,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 nav ul li a {
     text-decoration: none;
@@ -45,7 +45,6 @@ main > a img {
     margin: 0 auto;
     margin-top: 100px;
     width: 400px;
-    height: 100px;
 }
 input {
     display: block;
@@ -126,4 +125,30 @@ button:focus {
     outline: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
+@media (max-width: 768px) {
+    nav {
+        width: 100% ;
+        padding-right: 15%;
+    }
+    nav ul {
+        justify-content: space-around;
+    }
+    form div .fa-keyboard {
+        right: 21% ;
+    }
+    form div .fa-camera {
+        right: 27% ;
+    }
+    form div .fa-microphone {
+        right: 32% ;
+    }
+    form div .fa-magnifying-glass {
+        left: 24% ;
+    }
+    input::placeholder {
+        font-size: 10px;
+    }
+    main > a img {
+        width: 300px;
+    }
+}
